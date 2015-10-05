@@ -14,6 +14,6 @@ namespace GetAdvancedFuxxers
         {
             Class1.GetFileName();
             Console.Read();
-        }    
+        }
     }
 }
