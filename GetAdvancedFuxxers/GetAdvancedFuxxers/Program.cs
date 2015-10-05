@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using MyTestModules;
 
 namespace GetAdvancedFuxxers
 {
@@ -11,13 +12,8 @@ namespace GetAdvancedFuxxers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world! I am apan Bernt.");
-
-
-            
-
-
-            Console.WriteLine("Hej ");
-        }
+            Class1.GetFileName();
+            Console.Read();
+        }    
     }
 }
