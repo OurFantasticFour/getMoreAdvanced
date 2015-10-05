@@ -11,7 +11,7 @@ namespace GetAdvancedFuxxers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world! I am apan Donald.");
+            Console.WriteLine("Hello world! I am apan Donald. Isak ÄNDRAR");
         }
     }
 }
