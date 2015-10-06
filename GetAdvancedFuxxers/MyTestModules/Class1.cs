@@ -11,22 +11,38 @@ namespace MyTestModules
     {
         public static void GetFileName() 
         {
-            DirectoryInfo di = new DirectoryInfo("C:\\Users\\fuujin\\Desktop\\LAL\\DavidDocUnAnalyzed");
-            FileInfo[] rgFiles = di.GetFiles();
-            List<String> filer = new List<String>();
-            foreach (var item in rgFiles)
+            try
             {
-                filer.Add(item.ToString());
-            }
-            foreach (var item in filer)
-            {
+                string sub = null;
+                string sub2 = null;
+                string subba = null;
+
+                DirectoryInfo di = new DirectoryInfo("C:\\LAL\\DavidDocUnAnalyzed");
+                FileInfo[] rgFiles = di.GetFiles();
+                // List<String> filer = new List<String>();
+                int i = 0;
+                foreach (FileInfo f in rgFiles)
+                {
+
+                    sub = f.ToString().Substring(16, 6);
+                    sub2 = f.ToString().Substring(21, 4);
+                    subba = sub + "-" + sub2;
+                    i++;
+                    string t = ("Doc" + i + " " + subba + ".pdf");
+                    File.Move(f.FullName, di.ToString() + "\\" + t);
+                    Console.WriteLine("{0} har skrivits ut!", t);
+                }
                 
-                //Console.WriteLine(item);             
+                
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+          
             
 
-            Console.WriteLine();
-            Console.Read();
+
         }
        
     }
