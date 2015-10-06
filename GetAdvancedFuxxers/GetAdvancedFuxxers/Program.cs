@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using MyTestModules;
 
+
 namespace GetAdvancedFuxxers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Class1.GetFileName();
-            Console.Read();
+           
         }
     }
 }
