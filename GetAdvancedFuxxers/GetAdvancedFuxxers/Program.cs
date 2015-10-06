@@ -12,7 +12,7 @@ namespace GetAdvancedFuxxers
     {
         static void Main(string[] args)
         {
-            Class1.GetFileName();
+            FileRename.GetFileName();
             Console.Read();
         }
     }

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace MyTestModules
 {
-    public class Class1
+    public class FileRename
     {
         public static void GetFileName() 
         {
